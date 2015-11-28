@@ -12,3 +12,6 @@ LDFLAGS =
 DEBUG = -g
 OPTIMIZATION = -O0
 
+all:
+	touch test
+	chmod +x test
