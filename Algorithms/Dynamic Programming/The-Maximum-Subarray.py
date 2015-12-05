@@ -12,7 +12,9 @@ def MaximumSubarray(array):
 
         max_ending_here = max(0, max_ending_here + value)
         max_so_far = max(max_so_far, max_ending_here)
-        return max_so_far, max_non_contigious_sum
+    if max_so_far == 0:
+        max_so_far = min(array)
+    return max_so_far, max_non_contigious_sum
 
 
 if __name__ == '__main__':
