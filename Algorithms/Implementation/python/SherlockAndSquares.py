@@ -7,8 +7,6 @@ t = int(raw_input().strip())
 for a0 in xrange(t):
     a,b = raw_input().strip().split(' ')
     a,b = [int(a),int(b)]
-    counter = 0
-    for x in xrange(a,b):
-        if ( math.sqrt(x)**2 == x ):
-            counter += 1
-    print counter
+    minValue = int(math.ceil(a**0.5))
+    maxValue = int(math.floor(b**0.5))
+    print maxValue - minValue + 1
