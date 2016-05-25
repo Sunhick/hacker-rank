@@ -1,6 +1,7 @@
 #!/bin/python3
 
 import sys
+import math
 
 __author__ = "Sunil"
 __copyright__ = "Copyright 2016, hacker_rank Project"
@@ -21,6 +22,5 @@ if __name__ == "__main__":
 
 	for i in range(N):
 		S = input()
-		res = isfunny(S)
-		print(res)
+		print(isfunny(S))
 
